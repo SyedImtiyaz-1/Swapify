@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const backendUrl = "http://localhost:8000/listings";
+        const response = fetch(backendUrl, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2IyYzE1OGE4MDk5YTg0ZTg4NGE1ZCIsImVtYWlsIjoiYmlnbXVuY2guaW5AZ21haWwuY29taiIsImlhdCI6MTczNjEyNTQ2Mn0.80w6Et8hOe2aN9votmZP_nAPUhKr101ND2jkbJAbc_k'
+            },
+            }
+        );
+        response.then((res) => {
+            console.log(res);
+        });
+
+    </script>
+</body>
+</html>

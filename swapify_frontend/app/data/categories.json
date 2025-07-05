@@ -1,0 +1,77 @@
+[
+  {
+    "id": "electronics",
+    "name": "Electronics",
+    "icon": "📱",
+    "subcategories": [
+      "Smartphones",
+      "Laptops",
+      "Tablets",
+      "Cameras",
+      "Audio Devices",
+      "Gaming",
+      "Accessories"
+    ]
+  },
+  {
+    "id": "vehicles",
+    "name": "Vehicles",
+    "icon": "🚗",
+    "subcategories": [
+      "Cars",
+      "Motorcycles",
+      "Bicycles",
+      "Auto Parts",
+      "Commercial Vehicles"
+    ]
+  },
+  {
+    "id": "property",
+    "name": "Property",
+    "icon": "🏠",
+    "subcategories": [
+      "Houses",
+      "Apartments",
+      "Land",
+      "Commercial Space",
+      "PG & Roommates"
+    ]
+  },
+  {
+    "id": "furniture",
+    "name": "Furniture",
+    "icon": "🪑",
+    "subcategories": [
+      "Sofa & Dining",
+      "Beds & Wardrobes",
+      "Home Decor",
+      "Kitchen & Dining",
+      "Other Furniture"
+    ]
+  },
+  {
+    "id": "fashion",
+    "name": "Fashion",
+    "icon": "👕",
+    "subcategories": [
+      "Men's Clothing",
+      "Women's Clothing",
+      "Footwear",
+      "Accessories",
+      "Watches",
+      "Bags"
+    ]
+  },
+  {
+    "id": "hobbies",
+    "name": "Hobbies",
+    "icon": "🎨",
+    "subcategories": [
+      "Books",
+      "Sports Equipment",
+      "Musical Instruments",
+      "Art & Collectibles",
+      "Fitness Equipment"
+    ]
+  }
+] 

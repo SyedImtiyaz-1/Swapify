@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111827;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.chat-container {
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .chat-container {
+        height: 100vh;
+    }
+}
+
+/* Add this to ensure fixed positioning works correctly */
+html, body {
+    position: static;
+    height: 100%;
+}
+
+/* Ensure no parent elements interfere with fixed positioning */
+.fixed {
+    position: fixed;
+    transform: none !important;
+}
+
+/* Image Gallery Styles */
+.thumbs-swiper {
+  @apply h-20;
+}
+
+.thumbs-swiper .swiper-slide {
+  @apply w-20 h-20 opacity-50 transition-opacity duration-300;
+}
+
+.thumbs-swiper .swiper-slide-thumb-active {
+  @apply opacity-100 ring-2 ring-blue-500 rounded-lg;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full hover:bg-gray-400 dark:hover:bg-gray-500 transition-colors;
+}
+
+/* Swiper Custom Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-white bg-black/50 backdrop-blur-sm rounded-full w-10 h-10 transition-all duration-300 !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  @apply bg-black/70 !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  @apply text-base font-bold !important;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-white/70 opacity-50 transition-all duration-300 !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-white opacity-100 !important;
+}
+
+/* Premium Card Styles */
+.premium-card {
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl;
+}
+
+.premium-card-hover {
+  @apply hover:-translate-y-1;
+}
+
+/* Premium Button Styles */
+.premium-button {
+  @apply flex items-center justify-center gap-2 px-4 py-3 rounded-xl transition-all duration-300 font-medium shadow-lg hover:shadow-xl;
+}
+
+.premium-button-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white;
+}
+
+.premium-button-secondary {
+  @apply bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-900 dark:text-white;
+}
+
+/* Premium Text Styles */
+.premium-title {
+  @apply text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white;
+}
+
+.premium-subtitle {
+  @apply text-xl font-semibold text-gray-900 dark:text-white;
+}
+
+.premium-text {
+  @apply text-gray-600 dark:text-gray-300;
+}
+
+.premium-text-small {
+  @apply text-sm text-gray-500 dark:text-gray-400;
+}
+
+/* Premium Badge Styles */
+.premium-badge {
+  @apply px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.premium-badge-primary {
+  @apply bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300;
+}
+
+.premium-badge-secondary {
+  @apply bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300;
+}
