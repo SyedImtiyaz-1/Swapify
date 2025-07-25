@@ -1,0 +1,15 @@
+# Next.js & Node
+node_modules/
+.next/
+out/
+.env
+.env.local
+package-lock.json
+dist/
+*.log
+
+# macOS / Linux
+.DS_Store
+
+# VS Code
+.vscode/

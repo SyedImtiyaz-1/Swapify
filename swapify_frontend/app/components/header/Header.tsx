@@ -42,7 +42,7 @@ const Header = async () => {
                   type="search" 
                   name="q" 
                   id="default-search" 
-                  className="block w-full p-3 ps-10 text-sm text-gray-900 border border-gray-200 rounded-xl bg-gray-50/50 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white" 
+                  className="block w-full p-3 ps-10 text-sm text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-300 bg-gray-50/50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all dark:bg-gray-800 dark:border-gray-700" 
                   placeholder="Search items..."  
                   required
                 />
